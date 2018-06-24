@@ -1,6 +1,7 @@
 {
     "name": "coderius/yii2-lightbox2-widget",
     "description": "Yii 2 lightbox2-widget",
+    "version": "1.0.0",
     "keywords": ["lightbox", "widget", "lightbox2", "yii2"],
     "type": "yii2-extension",
     "license": "MIT",
@@ -13,7 +14,8 @@
     
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": "~2.0.0"
+        "yiisoft/yii2": "~2.0.0",
+        "bower-asset/lightbox2": "*"
         
     },
     "require-dev": {
@@ -25,9 +27,10 @@
         }
     },
     "repositories": [
+        
         {
-            "type": "path",
-            "url": "/opt/lampp/htdocs/yii2-extentions/yii2-lightbox2-widget"
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
         
     ]
