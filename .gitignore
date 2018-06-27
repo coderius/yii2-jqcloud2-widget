@@ -1,1 +1,6 @@
-/nbproject/private/
+/composer.lock
+/vendor/
+/.idea/
+
+# netbeans project files
+nbproject
