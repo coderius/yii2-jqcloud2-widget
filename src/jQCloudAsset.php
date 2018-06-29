@@ -8,22 +8,18 @@
  * @link https://github.com/coderius - My github
  */
 
-namespace coderius\lightbox2;
+namespace coderius\jqcloud2;
 
 use Yii;
 use yii\web\AssetBundle;
 
-class Lightbox2Asset extends AssetBundle
+class jQCloudAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/lightbox2/dist';
+    public $sourcePath = '@bower/jQCloud/dist';
     
     public $css = [];
     
     public $js = [];
-    
-//    public $jsOptions = [
-//        'position' => \yii\web\View::POS_END,
-//    ];
     
     public $depends = [
         'yii\web\JqueryAsset',
@@ -32,8 +28,8 @@ class Lightbox2Asset extends AssetBundle
     {
         parent::init();
         
-        $this->js[] = YII_DEBUG ? 'js/lightbox.js' : 'lightbox.min.js';
-        $this->css[] = YII_DEBUG ? 'css/lightbox.css' : 'lightbox.min.css';
+        $this->js[] = YII_DEBUG ? 'js/jqcloud.js' : 'jqcloud.min.js';
+        $this->css[] = YII_DEBUG ? 'css/jqcloud.css' : 'jqcloud.min.css';
     }
     
 }
