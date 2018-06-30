@@ -7,7 +7,9 @@
     "authors": [
         {
             "name": "Serg Coderius",
-            "email": "sunrise4fun@gmail.com"
+            "email": "sunrise4fun@gmail.com",
+             "homepage": "https://coderius.biz.ua",
+            "role": "Developer"
         }
     ],
     
@@ -23,6 +25,11 @@
     "autoload": {
         "psr-4": {
             "coderius\\jqcloud2\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
         }
     },
     "repositories": [
