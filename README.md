@@ -14,13 +14,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require coderius/yii2-jQCloud-widget "@dev"
+php composer.phar require coderius/yii2-jqcloud2-widget "@dev"
 ```
 
 or add
 
 ```json
-"coderius/yii2-jQCloud-widget" : "@dev"
+"coderius/yii2-jqcloud2-widget" : "@dev"
 ```
 
 to the require section of your application's `composer.json` file.
@@ -32,7 +32,7 @@ Basic usage.
 -----------
 * In view:
 ```php
-use coderius\lightbox2\Lightbox2;
+use coderius\jqcloud2;
 
 <?= \coderius\jqcloud2\jQCloud::widget([
     'tagOptions' => [
@@ -69,7 +69,7 @@ Advanced usage.
 --------------
 * In view:
 ```php
-use coderius\lightbox2\Lightbox2;
+use coderius\jqcloud2;
 
 <?= \coderius\jqcloud2\jQCloud::widget([
     'tagOptions' => [

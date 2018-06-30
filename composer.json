@@ -1,14 +1,14 @@
 {
-    "name": "coderius/yii2-jQCloud-widget",
+    "name": "coderius/yii2-jqcloud2-widget",
     "description": "Yii 2 jQCloud-widget",
-    "keywords": ["widget", "jQCloud", "yii2"],
+    "keywords": ["widget", "jQCloud", "yii2", "yii2-jqcloud2-widget"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Serg Coderius",
             "email": "sunrise4fun@gmail.com",
-             "homepage": "https://coderius.biz.ua",
+            "homepage": "https://coderius.biz.ua",
             "role": "Developer"
         }
     ],
