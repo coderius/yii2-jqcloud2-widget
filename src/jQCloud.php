@@ -2,7 +2,7 @@
 
 /**
  * @package yii2-extentions
- * @license The MIT License
+ * @license BSD-3-Clause
  * @copyright Copyright (C) 2012-2018 Sergio coderius <coderius>
  * @contacts sunrise4fun@gmail.com - Have suggestions, contact me :) 
  * @link https://github.com/coderius - My github
@@ -17,6 +17,8 @@ use Closure;
 
 class jQCloud extends Widget
 {
+    private $pluginName = 'jQCloud';
+
     public $id;
     /**
      * @var string the name of the jQCloud container tag.
@@ -26,18 +28,20 @@ class jQCloud extends Widget
      * @var array the HTML attributes for the jQCloud container tag.
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
      */
-    public $tagOptions = ['class' => 'tags'];
-    
-    
+    public $tagOptions = ['class' => 'jqcloud'];
     /**
      * @var array the words & options for the JS plugin.
      * @see http://mistic100.github.io/jQCloud/index.html 
      */
     public $wordsOptions = [];
-    
+    /**
+     * @var array. Cloud options
+     * @see http://mistic100.github.io/jQCloud/index.html#cloud-options
+     */
     public $cloudOptions = [];
     /**
-     * 
+     * @var closure. Methods
+     * @see http://mistic100.github.io/jQCloud/index.html#methods
      */
     public $methods;
     
@@ -48,7 +52,14 @@ class jQCloud extends Widget
     {
         parent::init();
         
-        $this->id = ArrayHelper::remove($this->tagOptions, 'id', $this->getId());
+        ArrayHelper::merge(['id' =>  $this->getId()], $this->tagOptions);
+        if(empty($this->tagOptions['id'])){
+            $this->tagOptions['id'] = $this->getId();
+        }
+        $this->id = $this->tagOptions['id'];
+        
+        
+        
     } 
     
     /**
@@ -58,13 +69,13 @@ class jQCloud extends Widget
     {
         $pluginJs = $this->makePlugin('jQCloud');
         $this->registerAssets($pluginJs);
-        
-        echo Html::tag($this->tag, '', $this->tagOptions);
+        $container = Html::tag($this->tag, '', $this->tagOptions);
+        echo $container;
     }
     
     /**
      * @param string $name
-     * @return string
+     * @return string json
      */
     protected function makePlugin($name)
     {
@@ -90,7 +101,7 @@ class jQCloud extends Widget
             $js .= "\n{$methods}";
         }
         
-        return $js;
+        return YII_DEBUG ? $js : preg_replace('/(\n|\r|\s)*/',"", $js);
     }
     
     /**
@@ -100,6 +111,14 @@ class jQCloud extends Widget
         $view = $this->getView();
         $bundle = jQCloudAsset::register($view);
         $view->registerJs($plugin);
+    }
+    /**
+     * @param type $autoGenerate
+     * @return string widget id
+     */
+    public function getId($autoGenerate = true){
+        
+        return strtolower($this->pluginName)."-".parent::getId();
     }
     
     

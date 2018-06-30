@@ -1,10 +1,9 @@
 {
-    "name": "coderius/yii2-lightbox2-widget",
-    "description": "Yii 2 lightbox2-widget",
-    "version": "1.0.0",
-    "keywords": ["lightbox", "widget", "lightbox2", "yii2"],
+    "name": "coderius/yii2-jQCloud-widget",
+    "description": "Yii 2 jQCloud-widget",
+    "keywords": ["widget", "jQCloud", "yii2"],
     "type": "yii2-extension",
-    "license": "MIT",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Serg Coderius",
@@ -15,7 +14,7 @@
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0.10",
-        "bower-asset/lightbox2": "*"
+        "bower-asset/jqcloud2": "*"
         
     },
     "require-dev": {
@@ -23,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "coderius\\lightbox2\\": "src/"
+            "coderius\\jqcloud2\\": "src/"
         }
     },
     "repositories": [
