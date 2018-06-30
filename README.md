@@ -1,8 +1,10 @@
 jQCloud widget for Yii2
 =========================
-The jQCloud widget is a customized jQCloud script based on [Lightbox](http://mistic100.github.io/jQCloud/index.html#words-options). and 
+The jQCloud widget is a customized jQCloud script based on [jQCloud](http://mistic100.github.io/jQCloud/index.html#words-options). and 
 This widget used to word clouds and tag clouds that are actually shaped like a cloud. 
 
+jQCloud screenshot:
+-------------------
 ![alt text](screenshots/s1.png "jQCloud example")
 
 Installation
@@ -23,12 +25,12 @@ or add
 
 to the require section of your application's `composer.json` file.
 
-Usage
------
-* In view:
+
+
 
 Basic usage.
 -----------
+* In view:
 ```php
 use coderius\lightbox2\Lightbox2;
 
@@ -65,6 +67,7 @@ use coderius\lightbox2\Lightbox2;
 
 Advanced usage.
 --------------
+* In view:
 ```php
 use coderius\lightbox2\Lightbox2;
 
