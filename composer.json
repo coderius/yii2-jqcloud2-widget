@@ -3,7 +3,7 @@
     "description": "Yii 2 jQCloud-widget",
     "keywords": ["widget", "jQCloud", "yii2", "yii2-jqcloud2-widget"],
     "type": "yii2-extension",
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "authors": [
         {
             "name": "Serg Coderius",
