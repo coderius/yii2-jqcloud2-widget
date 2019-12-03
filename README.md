@@ -5,7 +5,7 @@ This widget used to word clouds and tag clouds that are actually shaped like a c
 
 jQCloud screenshot:
 -------------------
-![alt text](https://github.com/coderius/github-images/blob/master/pic2.png "jQCloud example")
+![alt text](https://raw.githubusercontent.com/coderius/github-images/master/pic2.png "jQCloud example")
 
 Installation
 ------------
