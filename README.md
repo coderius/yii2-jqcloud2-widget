@@ -68,7 +68,8 @@ use coderius\jqcloud2;
 
 Advanced usage.
 --------------
-* In view:
+In view:
+
 ```php
 use coderius\jqcloud2;
 
