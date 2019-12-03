@@ -30,7 +30,8 @@ to the require section of your application's `composer.json` file.
 
 Basic usage.
 -----------
-* In view:
+In view:
+
 ```php
 use coderius\jqcloud2;
 
