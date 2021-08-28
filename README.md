@@ -127,6 +127,9 @@ use coderius\jqcloud2;
     
 ]); ?>
 ```
+Help us to improve this extention.
+----------------------------------
+Please click on the link below to [set star](https://github.com/coderius/yii2-jqcloud2-widget/stargazers) if You decide that this extention is useful for you. 
 
 More info about options look in: 
 [site about jQuery plugin](http://mistic100.github.io/jQCloud/index.html#words-options)
